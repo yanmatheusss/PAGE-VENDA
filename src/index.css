@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom natural premium palette overrides if needed, or we can use tailwind defaults with beautiful aliases */
+  --color-forest-50: #f4f6f4;
+  --color-forest-100: #e3e8e2;
+  --color-forest-200: #cad6c9;
+  --color-forest-300: #a4baa2;
+  --color-forest-400: #7a9a78;
+  --color-forest-500: #597c57;
+  --color-forest-600: #446142;
+  --color-forest-700: #374f35;
+  --color-forest-800: #2d3f2c;
+  --color-forest-900: #1a2719;
+  --color-forest-950: #0f160e;
+
+  --color-gold-50: #fdfbf7;
+  --color-gold-100: #faf3e6;
+  --color-gold-200: #f2e1c1;
+  --color-gold-300: #e5c58f;
+  --color-gold-400: #d6a45c;
+  --color-gold-500: #c58636;
+  --color-gold-600: #aa6a27;
+  --color-gold-700: #88501f;
+  --color-gold-800: #6a3d1b;
+  --color-gold-900: #492813;
+
+  --color-sand-50: #faf9f6;
+  --color-sand-100: #f3f0e8;
+  --color-sand-200: #e5dfd0;
+  --color-sand-300: #d1c8b3;
+  --color-sand-400: #baa991;
+  --color-sand-500: #a28c70;
+  --color-sand-600: #887258;
+  --color-sand-700: #6f5c47;
+  --color-sand-800: #5b4b3b;
+  --color-sand-900: #4a3e32;
+}
+
+/* Base styling overrides for custom organic transitions */
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+::selection {
+  background-color: var(--color-gold-200);
+  color: var(--color-forest-950);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-sand-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-forest-300);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-forest-400);
+}
+

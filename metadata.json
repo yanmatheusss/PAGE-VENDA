@@ -1,0 +1,6 @@
+{
+  "name": "Orvalho da Amazônia - Ouro da Floresta",
+  "description": "Página de vendas moderna, sensorial e de alta conversão para o sabonete artesanal amazônico premium Ouro da Floresta da Orvalho da Amazônia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
